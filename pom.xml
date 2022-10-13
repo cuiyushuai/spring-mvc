@@ -11,6 +11,7 @@
     <modules>
         <module>ts01-springMVC-serlvet</module>
         <module>ts02-springmvc-hellomvc</module>
+        <module>ts03-springmvc-annotation</module>
     </modules>
 
     <dependencies>
