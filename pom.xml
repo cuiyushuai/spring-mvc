@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ts01-springMVC-serlvet</module>
+        <module>ts02-springmvc-hellomvc</module>
     </modules>
 
     <dependencies>
