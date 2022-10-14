@@ -12,6 +12,7 @@
         <module>ts01-springMVC-serlvet</module>
         <module>ts02-springmvc-hellomvc</module>
         <module>ts03-springmvc-annotation</module>
+        <module>ts04-springmvc-controller</module>
     </modules>
 
     <dependencies>
@@ -39,5 +40,27 @@
         </dependency>
 
     </dependencies>
+
+    <!--Maven可能存在资源过滤的问题-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 
 </project>
