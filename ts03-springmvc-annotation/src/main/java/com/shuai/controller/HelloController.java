@@ -1,5 +1,6 @@
 package com.shuai.controller;
 
+import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
   @RequestMapping("/h1")
-  public String hello(Model model) {
+  public String hello(@NotNull Model model) {
 
     model.addAttribute("msg", "Hello,SpringMVC");
 
