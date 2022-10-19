@@ -51,7 +51,6 @@ public class FileController {
     is.close();
     return "ok";
   }
-
   /*
    * 采用file.Transto 来保存上传的文件
    */
@@ -74,7 +73,9 @@ public class FileController {
 
     return "redirect:/index.jsp";
   }
-
+  /*
+   * 下载功能
+   */
   @RequestMapping(value = "/download")
   public String downloads(HttpServletResponse response, HttpServletRequest request) throws Exception {
     //要下载的图片地址
