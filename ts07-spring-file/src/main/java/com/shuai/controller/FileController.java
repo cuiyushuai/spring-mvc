@@ -75,7 +75,6 @@ public class FileController {
   }
   /*
    * 下载功能
-   * 还可以通过链接的方式
    */
   @RequestMapping(value = "/download")
   public String downloads(HttpServletResponse response, HttpServletRequest request) throws Exception {
